@@ -1,0 +1,18 @@
+ * {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: linear-gradient(navy,aqua);
+  height: 100%;
+} 
+
+.welcome {
+  text-align: center;
+  text-decoration: wavy;
+  font-weight: bold;
+  padding-top: 40px;
+  font-size: 40px;
+  color: darkcyan;
+}

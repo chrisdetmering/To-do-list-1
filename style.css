@@ -16,3 +16,8 @@ html {
   font-size: 40px;
   color: darkcyan;
 }
+
+.todolist { 
+  padding-top: 30px;
+  text-align: center;
+}

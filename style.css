@@ -24,4 +24,6 @@ html {
 input {
   width: 200px;
   height: 30px;
+  border-radius: 5px;
+  text-align: center;
 }

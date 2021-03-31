@@ -28,12 +28,12 @@ input {
   text-align: center;
 }
 .container {
-  max-width: 60%;
+  width: 60%;
   padding: 20px;  
   margin: auto;
   text-align: left;
   color: darkcyan;
   display: flex;
   flex-direction: column;
-  justify-content: ;
+  justify-content: left;
 }

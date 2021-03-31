@@ -4,7 +4,7 @@
   padding: 0;
 }
 html {
-  background: linear-gradient(navy,aqua);
+  background: navy;
   height: 100%;
 } 
 
@@ -26,4 +26,14 @@ input {
   height: 30px;
   border-radius: 5px;
   text-align: center;
+}
+.container {
+  max-width: 60%;
+  padding: 20px;  
+  margin: auto;
+  text-align: left;
+  color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
 }

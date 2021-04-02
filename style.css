@@ -27,7 +27,11 @@ input {
   border-radius: 5px;
   text-align: center;
 }
-.container {
+#sbmt_btn {
+  margin-top: 10px;
+  width: 100px;
+  height: 30px;
+}
   
 }
 li {

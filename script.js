@@ -1,11 +1,9 @@
 'use strict';
 
-let todoItems = [7, 8, 9];
+let todoItems = [];
 
-function addTodolist() {
-  const listitem = getElementById("userslist")
-  document.getElementById("userslist").innerText = todoItems.forEach(element => document.createElement(listitem))
+function createToDoList() {
+  const list = document.querySelector("#userslist")
+
+  const listitem = document.createElement("li")
 }
-
-
-addTodolist();

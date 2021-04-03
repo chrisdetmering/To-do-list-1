@@ -21,26 +21,33 @@ html {
   padding-top: 30px;
   text-align: center;
 }
-input {
+
+#userInput {
   width: 200px;
   height: 30px;
   border-radius: 5px;
   text-align: center;
 }
-#sbmt_btn {  
-  width: 100px;
-  height: 30px;
+
+#sbmt_btn {
+  margin-top: 10px;
+  width: 80px;
 }
 
 li {
   width: 60%;
-  padding: 20px;  
+  padding: 10px;  
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: left;
   color: cyan;
   justify-content: left;
   height: fit-content;
   background-color: navy;
   border-radius: 10px;
+}
+
+#box {
+  float: left;
+  margin-right: 5px;
 }

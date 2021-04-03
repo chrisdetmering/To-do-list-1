@@ -51,3 +51,8 @@ li {
   float: left;
   margin-right: 5px;
 }
+
+#deleteButton {
+  float: right;
+  height:max-content; 
+}

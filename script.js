@@ -13,7 +13,7 @@ function addtoList(e) {
   checkbox.type = "checkbox";
   checkbox.checked = false;
   checkbox.name = userinput.value;
-  checkbox.id = "box"
+  checkbox.id = "box";
 
   let deleteButton = document.createElement("button");
   deleteButton.id = "deleteButton";
@@ -28,6 +28,9 @@ function addtoList(e) {
   myList.appendChild(li);
 }
 
+const dlt = document.getElementsByName(userinput.value);
+dlt.addEventListener('click', deletelistitem)
 
+function deletelistitem() {
 
-
+}

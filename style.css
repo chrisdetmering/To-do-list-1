@@ -27,8 +27,7 @@ input {
   border-radius: 5px;
   text-align: center;
 }
-#sbmt_btn {
-  margin-top: 10px;
+#sbmt_btn {  
   width: 100px;
   height: 30px;
 }

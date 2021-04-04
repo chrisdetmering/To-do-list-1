@@ -1,26 +1,30 @@
 'use strict';
-
 const button = document.getElementById('sbmt_btn')
 button.addEventListener('click', addtoList);
 
 function addtoList(e) {
   e.preventDefault();
 
-  let myList = document.getElementById("userslist");
-  let userinput = document.getElementById("userInput");
-  let li = document.createElement("li");
+  const myList = document.getElementById("userslist");
+  const userinput = document.getElementById("userInput");
+  const li = document.createElement("li");
 
-  let checkbox = document.createElement('input');
+  const checkbox = document.createElement('input');
   checkbox.type = "checkbox";
   checkbox.checked = false;
   checkbox.name = userinput.value;
   checkbox.id = "box";
-  todolistitems.push(userinput.value)
+  checkbox.addEventListener('change', function () {
+    li.style.textDecoration = checkbox.checked ? 'line-through' : 'none';
+  });
 
-  let deleteButton = document.createElement("button");
+  const deleteButton = document.createElement("button");
   deleteButton.id = "deleteButton";
   deleteButton.innerText = "X";
   deleteButton.name = userinput.value;
+  deleteButton.addEventListener('click', function () {
+    li.remove();
+  });
 
   li.setAttribute('id', userinput.value);
   li.appendChild(document.createTextNode(userinput.value));

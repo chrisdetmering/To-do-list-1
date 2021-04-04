@@ -1,4 +1,5 @@
 'use strict';
+
 const button = document.getElementById('sbmt_btn')
 button.addEventListener('click', addtoList);
 
@@ -14,6 +15,7 @@ function addtoList(e) {
   checkbox.checked = false;
   checkbox.name = userinput.value;
   checkbox.id = "box";
+  todolistitems.push(userinput.value)
 
   let deleteButton = document.createElement("button");
   deleteButton.id = "deleteButton";
@@ -28,9 +30,4 @@ function addtoList(e) {
   myList.appendChild(li);
 }
 
-const dlt = document.getElementsByName(userinput.value);
-dlt.addEventListener('click', deletelistitem)
 
-function deletelistitem() {
-
-}

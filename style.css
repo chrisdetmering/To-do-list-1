@@ -34,6 +34,9 @@ html {
   width: 80px;
 }
 
+ul {
+  text-align: center;
+}
 li {
   width: 60%;
   padding: 10px;  
@@ -41,18 +44,20 @@ li {
   margin-top: 10px;
   text-align: left;
   color: cyan;
-  height: fit-content;
   background-color: navy;
   border-radius: 10px;
   display: inline-block;
+  overflow-wrap: break-word;
+
 }
 
 #box {
   float: left;
   margin-right: 5px;
+  vertical-align: middle;
 }
 
 #deleteButton {
-  float: right;
-  height:max-content; 
+  float: inline-end;
+  vertical-align: middle;
 }

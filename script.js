@@ -37,10 +37,8 @@ function addtoList(e) {
     li.appendChild(checkbox);
     myList.appendChild(li);
   }
+  userinput.value = ""
 }
-function myFunction() {
-  document.getElementById("userInput").reset();
-}
-myFunction();
+
 
 

@@ -55,10 +55,11 @@ li {
   margin-right: 5px;
   margin-left: -20px;
   vertical-align: middle;
+  display: table-cell;
 }
 
 #deleteButton {
   float: inline-end;
-  vertical-align: 50%;
+  vertical-align: middle;
   margin-right: -20px;
 }

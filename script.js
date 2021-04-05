@@ -30,7 +30,6 @@ function addtoList(e) {
       li.remove();
     });
 
-    li.setAttribute('id', userinput.value);
     li.appendChild(document.createTextNode(userinput.value));
 
     li.appendChild(deleteButton);

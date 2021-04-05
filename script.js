@@ -2,12 +2,12 @@
 const button = document.getElementById('sbmt_btn')
 button.addEventListener('click', addtoList);
 
-
 function addtoList(e) {
   e.preventDefault();
 
   const myList = document.getElementById("userslist");
   const userinput = document.getElementById("userInput");
+
   if (userinput.value == '') {
     alert('Please enter your to-do')
   } else {
@@ -38,5 +38,9 @@ function addtoList(e) {
     myList.appendChild(li);
   }
 }
+function myFunction() {
+  document.getElementById("userInput").reset();
+}
+myFunction();
 
 

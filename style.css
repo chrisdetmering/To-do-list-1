@@ -16,7 +16,7 @@ html {
   color: navy;
 }
 
-.todolist { 
+.todoList { 
   padding-top: 30px;
   text-align: center;
 }
@@ -28,13 +28,14 @@ html {
   text-align: center;
 }
 
-#sbmt_btn {
+#submitButton {
   margin-top: 10px;
   width: 80px;
 }
 
 ul {
   text-align: center;
+  list-style: none;
 }
 li {
   width: 60%;

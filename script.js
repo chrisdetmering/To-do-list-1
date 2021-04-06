@@ -1,43 +1,51 @@
 'use strict';
-const button = document.getElementById('sbmt_btn')
-button.addEventListener('click', addtoList);
+document.getElementById('submitButton')
+.addEventListener('click', displayTodo);
 
-function addtoList(e) {
+function displayTodo(e) {
   e.preventDefault();
 
-  const myList = document.getElementById("userslist");
-  const userinput = document.getElementById("userInput");
+  const myList = document.getElementById("usersList");
+  const userInput = document.getElementById("userInput");
+  const text = userInput.value;
 
-  if (userinput.value == '') {
+  if (text == '') {
     alert('Please enter your to-do')
-  } else {
-    const li = document.createElement("li");
+    return; 
+  } 
+  const li = document.createElement("li");
+  const deleteButton = createDeleteTodoButton(li); 
+  const checkbox = createCheckBox(li)
 
-    const checkbox = document.createElement('input');
-    checkbox.type = "checkbox";
-    checkbox.checked = false;
-    checkbox.name = userinput.value;
-    checkbox.id = "box";
-    checkbox.addEventListener('change', function () {
-      li.style.textDecoration = checkbox.checked ? 'line-through' : 'none';
-    });
+  li.appendChild(document.createTextNode(text));
+  li.appendChild(deleteButton);
+  li.appendChild(checkbox);
+  myList.appendChild(li);
 
-    const deleteButton = document.createElement("button");
-    deleteButton.id = "deleteButton";
-    deleteButton.innerText = "X";
-    deleteButton.name = userinput.value;
-    deleteButton.addEventListener('click', function () {
-      li.remove();
-    });
-
-    li.appendChild(document.createTextNode(userinput.value));
-
-    li.appendChild(deleteButton);
-    li.appendChild(checkbox);
-    myList.appendChild(li);
-  }
-  userinput.value = ""
+   userInput.value = ""
 }
 
 
+function createCheckBox(todoListItem) { 
+  const checkbox = document.createElement('input');
+  checkbox.type = "checkbox";
+  checkbox.checked = false;
+  checkbox.id = "box";
+  checkbox.addEventListener('change', function () {
+    todoListItem.style.textDecoration = checkbox.checked ? 'line-through' : 'none';
+  });
+
+  return checkbox; 
+}
+
+function createDeleteTodoButton(todoListItem) { 
+  const deleteButton = document.createElement("button");
+    deleteButton.id = "deleteButton";
+    deleteButton.innerText = "X";
+    deleteButton.addEventListener('click', function () {
+      todoListItem.remove();
+    });
+
+    return deleteButton; 
+}
 
